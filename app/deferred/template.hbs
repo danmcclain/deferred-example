@@ -1,0 +1,6 @@
+<h1 data-hero-id="{{model.id}}">{{model.title}}</h1>
+
+{{#deferred-content model.body as |d|}}
+  {{#d.pending}}Loading content...{{/d.pending}}
+  {{#d.fulfilled as |body|}}{{{body}}}{{/d.fulfilled}}
+{{/deferred-content}}

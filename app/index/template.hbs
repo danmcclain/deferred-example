@@ -1,0 +1,9 @@
+<ul>
+  {{#each model as |item|}}
+    <li>
+      <span data-hero-id="{{item.id}}">{{item.title}}</span>
+      {{link-to "Deferred" "deferred" item}}
+      {{link-to "Normal" "normal" item}}
+    </li>
+  {{/each}}
+</ul>
