@@ -1,7 +1,8 @@
+<h1>Blog</h1>
 <ul>
   {{#each model as |item|}}
     <li>
-      <span data-hero-id="{{item.id}}">{{item.title}}</span>
+      <h2 data-hero-id="{{item.id}}">{{item.title}}</h2>
       {{link-to "Deferred" "deferred" item}}
       {{link-to "Normal" "normal" item}}
     </li>
